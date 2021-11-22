@@ -692,7 +692,7 @@ Template for scaffolding a new Genie app suitable for nimble web services.
 - `autostart::Bool`: automatically start the app once the file structure is created
 - `dbsupport::Bool`: bootstrap the files needed for DB connection setup via the SearchLight ORM
 - `dbadapter::Union{String,Symbol,Nothing} = nothing` : pass the SearchLight database adapter to be used by default
-(one of :MySQL, :SQLite, or :PostgreSQL)`. If `dbadapter` is `nothing`, an adapter will have to be selected interactivel
+(one of :MySQL, :SQLite, or :PostgreSQL). If `dbadapter` is `nothing`, an adapter will have to be selected interactivel
 at the REPL, during the app creation process.
 """
 function newapp_webservice(path::String = "."; autostart::Bool = true, dbsupport::Bool = false, dbadapter::Union{String,Symbol,Nothing} = nothing) :: Nothing
